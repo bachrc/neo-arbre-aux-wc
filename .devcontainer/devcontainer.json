@@ -9,10 +9,7 @@
   "remoteUser": "bipboup",
   "customizations": {
     "vscode": {
-      "extensions": [
-        "svelte.svelte-vscode",
-        "ms-vscode-remote.remote-containers"
-      ]
+      "extensions": ["svelte.svelte-vscode", "ms-vscode-remote.remote-containers"]
     }
   }
 }
