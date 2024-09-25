@@ -2,4 +2,6 @@
 
 Il est nouveau
 
-## Ressources de dev
+## Liens et ressources pour le dev
+
+- https://github.com/jianyuan/pocketbase-sveltekit-auth

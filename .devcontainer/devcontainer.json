@@ -1,16 +1,18 @@
 {
-  "name": "Devbox Remote Container",
+  "name": "De L'Arbre aux WC",
   "build": {
-    "dockerfile": "./Dockerfile",
-    "context": ".."
+    "dockerfile": "../Dockerfile",
+    "context": "..",
+    "target": "dev"
   },
+  "containerUser": "bipboup",
+  "remoteUser": "bipboup",
   "customizations": {
     "vscode": {
-      "settings": {},
       "extensions": [
-        "jetpack-io.devbox"
+        "svelte.svelte-vscode",
+        "ms-vscode-remote.remote-containers"
       ]
     }
-  },
-  "remoteUser": "devbox"
+  }
 }

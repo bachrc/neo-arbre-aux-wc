@@ -2,8 +2,7 @@ import { superValidate } from 'sveltekit-superforms';
 import { zod } from 'sveltekit-superforms/adapters';
 import { z } from 'zod';
 
-import { message } from 'sveltekit-superforms';
-import { fail } from '@sveltejs/kit';
+import { fail, redirect } from '@sveltejs/kit';
 import { login } from '$lib/auth';
 
 // Define outside the load function so the adapter can be cached
@@ -26,7 +25,8 @@ export const actions = {
     if (authData.isErr()) {
       return fail(400, { form });
     }
-    return message(form, 'Form posted successfully!');
+
+    return redirect(303, '/');
   }
 };
 
